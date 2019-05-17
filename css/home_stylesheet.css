@@ -1,0 +1,566 @@
+
+body {
+    margin: 0;
+}
+#container {
+    width: 100%;
+}
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: lightgrey;
+}
+
+#startGameContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+#topHomeBackground {
+    width: 100%;
+}
+#topHomeBackground2 {
+    display:none;
+}
+#rectangle {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 25%;
+    background-color: black;
+    width: 50%;
+    height: 75px;
+    margin: 0 auto;
+    opacity: .50;
+}
+#rectangle a {
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: white;
+    opacity: 0.95;
+    font-size: 3em;
+    z-index: 1;
+    text-decoration: none;
+}
+#rectangle a:hover {
+    text-decoration: underline;
+}
+#profileStore {
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+}
+.profile {
+    display: flex;
+    clip-path: polygon(0 0, 0 50%, 100% 0);
+    background-image: url(../pics/Home_Pics/walking_man_edited2.jpg);
+    height: 250px;
+}
+.profile a {
+    font-size: 2.5em;
+    color: white;
+    position: relative;
+    left: 14%;
+    bottom: 40px; 
+    z-index: 1;
+    text-decoration: none;
+}
+.store {
+    display: flex;
+    clip-path: polygon(100% 0, 0 50%, 100% 50%);
+    background-image: url(../pics/Home_Pics/profile_black_edited.jpg);
+    height: 250px;
+    position: relative;
+    bottom: 124px;
+}
+.store a {
+    font-size: 2.5em;
+    color: white;
+    position: relative;
+    bottom: 20px;
+    left: 65%;
+    z-index: 1;
+    
+}
+.startGameLink:hover {
+    text-decoration: underline;
+}
+.profileLink:hover{
+    text-decoration: underline;
+}
+.storeLink:hover {
+    text-decoration: underline;
+}
+#scheduleContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #970009;
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    height: 45vh;
+}
+.scheduleTitle {
+    display: flex;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    border-radius: 12px;
+    background-color: black;
+    height: 60px;
+}
+.scheduleTitle p {
+    display: flex;
+    align-items: center;
+    font-size: 18pt
+}
+.schedule1 {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    border-radius: 12px;
+    background-color: darkgrey;
+    width: 98%;
+    height: 70px;
+}
+.schedule2 {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    border-radius: 12px;
+    background-color: darkgrey;
+    width: 98%;
+    height: 70px;
+}
+.schedule3 {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    border-radius: 12px;
+    background-color: darkgrey;
+    width: 98%;
+    height: 70px;
+}
+.sport{
+    position: relative;
+    top: 5px;
+    width: 15%;
+    height: 60px;
+    margin-left: 5%;
+    background-color: pink;
+}
+.scheduleData {
+    position: relative;
+    top: 5px;
+    width: 75%;
+    height: 60px;
+    margin-left: 1%;
+    background-color:aquamarine;
+    
+}
+#friendsContainer {
+    display: flex;
+    flex-direction: row;
+    background-color: #970009;
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    height: 45vh;
+}
+#middleline {
+    width: 50%;
+    border-right: 1px solid black;
+}
+.friendsTitle {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-radius: 12px;
+    height: 60px;
+    background: black;
+}
+.friends {
+    display: flex;
+    flex-direction: row;
+    width: 97%;
+    height: 60px;
+    margin: 0 auto;
+    border-radius: 12px;
+    margin-top: 5px;
+    background-color: darkgrey;
+}
+.avatar {
+    position: relative;
+    top: 5px;
+    left: 4%;
+    width: 20%;    
+    height: 50px;
+    background-color: pink;
+}
+.userName {
+    position: relative;
+    top: 5px;
+    margin-left: 6%;
+    width: 70%;
+    height: 50px;
+    background-color: aquamarine;
+}
+#recentlyPlayedTitle {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border-radius: 12px;
+    height: 60px;
+    background: black;
+
+
+    height: 60px;
+    background: black;
+
+    height: 100%;
+    background: #970009;
+
+}
+#friendsContainer p {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 18pt;
+}
+.recentPlayers {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 60px !important;
+    color: white;
+    font-size: 18pt;
+    
+    width: 100%;
+    border-radius: 12px;
+    height: 40px;
+    background: black;
+}
+.recentPlayers span {
+    display: flex;
+    align-items: center;
+}
+.recentlyPlayed {
+    display: flex;
+    flex-direction: row;
+    width: 97%;
+    height: 60px;
+    margin: 0 auto;
+    margin-top: 5px;
+    border-radius: 12px;
+    background-color: grey;
+}
+.matchAvatar {
+    position: relative;
+    top: 5px;
+    left: 4%;
+    width: 20%;    
+    height: 50px;
+    background-color: pink;
+}
+.matchUser {
+    position: relative;
+    top: 5px;
+    margin-left: 6%;
+    width: 70%;
+    height: 50px;
+    background-color: aquamarine;
+}
+.lowerWrapper {
+    background-color: grey;
+}
+.button {
+    margin: 0 auto;
+}
+.moreBTN {
+    display: flex;
+    justify-content: center;
+    width: 80px;
+}
+.friendsBTN {
+    margin-left: 30%;
+    margin-top: 5px;
+}
+.recentBTN {
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+#scheduleWrapperOverLay {
+    display: none;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    height: 100%;
+    z-index: 9001;
+}
+#scheduleContainerOverLay {
+    display: flex;
+    flex-direction: column;
+    background-color: #970009;
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    height: 100%;
+    z-index: 9001;
+}
+.scheduleTitleOverLay {
+    display: flex;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    border-radius: 12px;
+    background-color: black;
+    height: 60px;
+    z-index: 9001;
+}
+.scheduleTitleOverLay p {
+    display: flex;
+    align-items: center;
+    font-size: 18pt;
+    z-index: 9001;
+}
+.scheduleOverLay1 {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    border-radius: 12px;
+    background-color: darkgrey;
+    width: 98%;
+    height: 70px;
+    z-index: 9001;
+}
+.scheduleOverLay2 {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    border-radius: 12px;
+    background-color: darkgrey;
+    width: 98%;
+    height: 70px;
+    z-index: 9001;
+}
+.scheduleOverLay3 {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    border-radius: 12px;
+    background-color: darkgrey;
+    width: 98%;
+    height: 70px;
+    z-index: 9001;
+}
+.sportOverLay{
+    position: relative;
+    top: 5px;
+    width: 15%;
+    height: 60px;
+    margin-left: 5%;
+    background-color: pink;
+    z-index: 9001;
+}
+.scheduleDataOverLay {
+    position: relative;
+    top: 5px;
+    width: 75%;
+    height: 60px;
+    margin-left: 1%;
+    background-color:aquamarine;
+    z-index: 9001;
+    
+}
+.buttonOverLay {
+    margin: 0 auto;
+    z-index: 9001;
+}
+
+#friendsWrapperOverLay {
+    display: none;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    height: 100%;
+    z-index: 9001;
+}
+#friendsContainerOverLay {
+    display: flex;
+    flex-direction: column;
+    background-color: #970009;
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    height: 800px;
+}
+.friendsTitleOverLay {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-radius: 12px;
+    height: 60px;
+    background: black;
+}
+#friendsContainerOverLay p {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 18pt;
+}
+.friendsOverLay {
+    display: flex;
+    flex-direction: row;
+    width: 97%;
+    height: 60px;
+    margin: 0 auto;
+    border-radius: 12px;
+    margin-top: 5px;
+    background-color: darkgrey;
+}
+.avatarOverLay {
+    position: relative;
+    top: 5px;
+    left: 4%;
+    width: 20%;    
+    height: 50px;
+    background-color: pink;
+}
+.userNameOverLay {
+    position: relative;
+    top: 5px;
+    margin-left: 6%;
+    width: 70%;
+    height: 50px;
+    background-color: aquamarine;
+}
+.friendsBTNOverLay {
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+#recentlyWrapperOverLay {
+    display: none;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    height: 100%;
+    z-index: 9001;
+}
+#recentlyPlayedContainerOverLay {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 800px;
+    margin: 0 auto;
+    border-radius: 12px;
+    background-color: #970009;
+}
+.recentPlayersOverLay {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 60px !important;
+    color: white;
+    font-size: 18pt;
+    
+    width: 100%;
+    border-radius: 12px;
+    height: 40px;
+    background: black;
+}
+.recentPlayersOverLay span {
+    display: flex;
+    align-items: center;
+}
+.recentlyPlayedOverLay {
+    display: flex;
+    flex-direction: row;
+    width: 97%;
+    height: 60px;
+    margin: 0 auto;
+    margin-top: 5px;
+    border-radius: 12px;
+    background-color: grey;
+}
+.matchAvatarOverLay {
+    position: relative;
+    top: 5px;
+    left: 4%;
+    width: 20%;    
+    height: 50px;
+    background-color: pink;
+}
+.matchUserOverLay {
+    position: relative;
+    top: 5px;
+    margin-left: 6%;
+    width: 70%;
+    height: 50px;
+    background-color: aquamarine;
+}
+.recentBTNOverLay {
+    margin: 0 auto;
+}
+
+.recentButtonOverLay {
+    margin: 0 auto;
+}
+
+
+@media only screen and (orientation:landscape) {
+    * { font-size: 1.3rem; }
+    
+    .scheduleANDFriendsContainer {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        height:60vh;
+    }
+    #topHomeBackground {
+        display:none;
+    }
+    #topHomeBackground2 {
+        display: block;
+        height:30vh;
+    }
+    #profileStore {
+        display:none;
+    }
+    #rectangle {
+        height: 50px;   
+    }
+    #scheduleContainer {
+        height: 60vh;
+        border-right: 8px solid black;
+
+    }
+    #friendsContainer {
+        height:60vh;
+    }
+
+}
+   
+
+
+
+

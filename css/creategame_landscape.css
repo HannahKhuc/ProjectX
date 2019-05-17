@@ -1,0 +1,179 @@
+body {
+    background-color: rgb(73, 71, 71);
+    font-size: 15pt;
+    text-align: center;
+    padding:10px;
+    overflow-y: hidden;
+}
+#row1 {
+    display: flex;
+    flex-direction: row;
+    height:150px;
+    background-color: #0173BC;
+    color:white;
+}
+#rectangle1 {
+    width: 100vw;
+    font-size: 20pt;
+}
+#rectangle2 {
+    width:15vw;
+    padding-top:30px;
+}
+.bar {
+    width: 90px;
+    height: 15px;
+    margin: 12px;
+    background-color: black;
+}
+#search {
+    font-size: 25pt;
+    height:80px;
+    width: 100%;
+    border-radius:10px; 
+    text-align:center;
+    background-image:  url(../pics/Creategame_Pics/search.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+#mapContainer {
+    background-color:lightblue;
+    width: 100%;
+    height: 65vh;
+}
+
+
+#map {
+    height: 100%;
+}
+
+
+#select {
+    background-color:#0173BC;
+    align-items: center;
+    padding:50px;
+}
+#date {
+    width:500px;
+    height:80px;
+    font-size: 24pt;
+    text-align: center;
+    border-radius: 12px;
+}
+#time {
+    width:500px;
+    height:80px;
+    font-size: 24pt;
+    text-align: center;
+    border-radius: 12px;
+}
+#submit {
+    width: 150px;
+    height:80px;
+    background-color:#F9A828;
+    color: black;
+    font-size: 22pt;
+}
+@media only screen and (orientation:landscape) {
+    * { font-size: 1.3rem; }
+#row1{
+    display:none;
+}
+#select {
+    display:none;  
+}
+#map {
+    background-color:lightblue;
+    width: 100%;
+    height: 90vh;
+}
+#search {
+    font-size: 20pt;
+    height:50px;
+    width: 100%;
+    border-radius:10px; 
+    text-align:center;
+    background-image:  url(../pics/Creategame_Pics/search.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+    
+}
+
+
+#description {
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#infowindow-content .title {
+    font-weight: bold;
+}
+
+#infowindow-content {
+    display: none;
+}
+
+#map #infowindow-content {
+    display: inline;
+}
+
+.pac-card {
+    margin: 10px 10px 0 0;
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    font-family: Roboto;
+}
+
+#pac-container {
+    padding-bottom: 12px;
+    margin-right: 12px;
+}
+
+.pac-controls {
+    display: inline-block;
+    padding: 5px 11px;
+}
+
+.pac-controls label {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+#pac-input {
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 300;
+    margin-left: 0px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 100vw;
+    height: 75px;
+}
+
+
+#pac-input:focus {
+    border-color: #4d90fe;
+}
+
+#title {
+    color: #fff;
+    background-color: #4d90fe;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 6px 12px;
+}
+    
+#target {
+    width: 345px;
+}
+
+    
+    

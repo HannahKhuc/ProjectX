@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>creategame landscape</title>
+        <meta charset = "utf-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <link rel="stylesheet" href="../css/creategame_landscape.css">
+<!--        Style sheet for back button --Raging---->
+        <link rel="stylesheet" href="../css/projects2930_general_stylesheet.css">
+        
+        <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+        <script src="../js/firebaseAuthCheck.js"></script> 
+    </head>
+    <body>
+        <div id = "row1">
+            <div id = "rectangle1">
+                <h1>CREATE GAME</h1>
+            </div>
+<!--
+            <div id = "rectangle2">
+                <div class = "bar"></div>
+                <div class = "bar"></div>
+                <div class = "bar"></div>
+            </div>
+-->
+        </div>
+       
+        <div id = "mapContainer">
+        <!--    <form action = "/flexbox.html">
+                <input type = "text" id = "search" placeholder = "Search" >
+            </form> -->
+            <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+            <div id = "map"></div>
+        </div>
+        <div id = "select">
+            <p>
+                <select  id = "date">
+                    <option value = "Day">Day</option>
+                    <option value = "1">Monday</option>
+                    <option value = "2">Tuesday</option>
+                    <option value = "3">Wednesday</option>
+                    <option value = "4">Thursday</option>
+                    <option value = "5">Friday</option>
+                    <option value = "6">Saturday</option>
+                    <option value = "7">Sunday</option>
+                </select>
+            </p>
+            <p>
+                <select id = "time">
+                    <option value ="Time">Time</option>
+                    <option value ="6">6:00 AM</option>
+                    <option value ="7">7:00 AM</option>
+                    <option value ="8">8:00 AM</option>
+                    <option value = "9">9:00 AM</option>
+                    <option value = "10">10:00 AM</option>
+                    <option value = "11">11:00 AM</option>
+                    <option value = "12">12:00 PM</option>
+                    <option value = "13">1:00 PM</option>
+                    <option value = "14">2:00 PM</option>
+                    <option value = "15">3:00 PM</option>
+                    <option value = "16">4:00 PM</option>
+                    <option value = "17">5:00 PM</option>
+                    <option value = "18">6:00 PM</option>
+                    <option value = "19">7:00 PM</option>
+                    <option value = "20">8:00 PM</option>
+                </select>          
+            </p> 
+            <p>
+                <input type ="submit" id = "submit" onclick = "createMatch()">
+            </p>
+        </div>
+<!--                        The JQuery library and the js-stylesheet for the landscape navi-bar --Raging---->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" async defer src="../js/createGame.js"></script>
+        <script type="text/javascript" async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChRxG0T2Jv9ljwSu31TgmDCo7e4Sgfpjc&libraries=places&callback=initMap"></script>
+
+        
+        <script rel="stylesheet" src="../js/general_2_stylesheet.js"></script>
+    </body>
+</html>
