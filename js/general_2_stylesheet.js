@@ -1,3 +1,5 @@
+//Stylesheet that generates html for the back-button to be used by select
+//application pages.
 $(document).ready(function() {
     $('body').prepend('<header></header');   
     
@@ -11,10 +13,10 @@ $(document).ready(function() {
         var urlPath = '/findgame.html';
         var urlPath2 = '/creategame_landscape.html';
         if((currentURL).includes(urlPath) || (currentURL).includes(urlPath2)) {
-            window.location.href = '../html/gamelandscape.html';
+            window.location.href = '/gamelandscape.html';
             console.log("yay it worked!");
         } else {
-        window.location.href = '../html/Home.html';
+        window.location.href = 'home.html';
             console.log("Why does this work?");
         }
     });
