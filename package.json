@@ -1,27 +1,25 @@
 {
-  "name": "team-24-comp-2930",
+  "name": "projectx",
   "version": "1.0.0",
-  "description": "The package manager for Got Next.",
-  "main": "index.js",
+  "description": "Find a Game app",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "default"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cinomed88/Team-24-COMP-2930.git"
+    "url": "git+https://github.com/HannahKhuc/ProjectX.git"
   },
-  "author": "",
+  "keywords": [
+    "default"
+  ],
+  "author": "HannahKhuc",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cinomed88/Team-24-COMP-2930/issues"
+    "url": "https://github.com/HannahKhuc/ProjectX/issues"
   },
-  "homepage": "https://github.com/cinomed88/Team-24-COMP-2930#readme",
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "express": "^4.16.4",
-    "jquery": "^3.4.1",
-    "json": "^9.0.6",
-    "sequelize": "^5.8.6",
-    "tedious": "^6.1.1"
-  }
+  "homepage": "https://github.com/HannahKhuc/ProjectX#readme"
 }
